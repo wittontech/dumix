@@ -1,52 +1,48 @@
 {
-  "name": "dumix",
+  "name": "Dumix",
   "package": "dumix",
-  "logo": "https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png",
+  "logo": "https://m.media-amazon.com/images/I/51eFjMPlctL.jpg",
   "assets": {
     "atoms": [
       {
-        "identifier": "Foo",
+        "identifier": "Dream",
+        "props": []
+      },
+      {
+        "identifier": "Horizon",
         "props": []
       }
     ],
     "examples": [
       {
-        "identifier": "Dumix",
-        "description": "Dumix Demo",
         "type": "BLOCK",
-        "thumbnail": "https://user-images.githubusercontent.com/13595509/77416958-99a46f80-6dff-11ea-9b0f-08817d4ae178.png",
+        "name": "Dream",
+        "thumbnail": "https://m.media-amazon.com/images/I/41ehKclkvWL.jpg",
+        "atomAssetId": "Dream",
         "dependencies": {
+          "dumix": {
+            "type": "NPM",
+            "value": "^1.0.0"
+          },
           "index.tsx": {
             "type": "FILE",
-            "value": "import React from 'react';\nimport { Button } from 'antd';\nimport styles from './index.less';\n\nexport default () => {\n  return <Button className={styles.container}>Hello UmiJS!</Button>;\n};\n"
-          },
-          "antd": {
-            "type": "NPM",
-            "value": "antd@^4"
-          },
-          "react": {
-            "type": "NPM",
-            "value": "react@^16.9"
+            "value": "import React from 'react';\nimport { Dream } from 'dumix';\n\nexport default () => <Dream title=\"Fighting\" />;"
           }
         }
       },
       {
-        "identifier": "Horizon",
-        "description": "Horizon for Dream Start",
         "type": "BLOCK",
-        "thumbnail": "https://user-images.githubusercontent.com/13595509/77416958-99a46f80-6dff-11ea-9b0f-08817d4ae178.png",
+        "name": "Horizon",
+        "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/511Q2wJb2zL._SX379_BO1,204,203,200_.jpg",
+        "atomAssetId": "Horizon",
         "dependencies": {
+          "dumix": {
+            "type": "NPM",
+            "value": "^1.0.0"
+          },
           "index.tsx": {
             "type": "FILE",
-            "value": "import React from 'react';\nimport { Button } from 'antd';\nimport styles from './index.less';\n\nexport default () => {\n  return <Button className={styles.container}>Hello UmiJS!</Button>;\n};\n"
-          },
-          "antd": {
-            "type": "NPM",
-            "value": "antd@^4"
-          },
-          "react": {
-            "type": "NPM",
-            "value": "react@^16.9"
+            "value": "import React from 'react';\nimport { Horizon } from 'dumix';\n\nexport default () => <Horizon title=\"Dream Start Here!\" />;"
           }
         }
       }
