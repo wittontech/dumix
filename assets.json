@@ -29,6 +29,26 @@
             "value": "react@^16.9"
           }
         }
+      },
+      {
+        "identifier": "Horizon",
+        "description": "Horizon for Dream Start",
+        "type": "BLOCK",
+        "thumbnail": "https://user-images.githubusercontent.com/13595509/77416958-99a46f80-6dff-11ea-9b0f-08817d4ae178.png",
+        "dependencies": {
+          "index.tsx": {
+            "type": "FILE",
+            "value": "import React from 'react';\nimport { Button } from 'antd';\nimport styles from './index.less';\n\nexport default () => {\n  return <Button className={styles.container}>Hello UmiJS!</Button>;\n};\n"
+          },
+          "antd": {
+            "type": "NPM",
+            "value": "antd@^4"
+          },
+          "react": {
+            "type": "NPM",
+            "value": "react@^16.9"
+          }
+        }
       }
     ]
   }
